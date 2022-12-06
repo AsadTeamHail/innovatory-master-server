@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 function verify(req, res, next){
-    const token = req.headers["x-access-token"]?.split('Split')[1]
+    const token = req.headers["x-access-token"].split('Split')[1]
     if(token){
       jwt.verify(token,'qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm', (err, decoded) =>{
         if(err) return res.json({
