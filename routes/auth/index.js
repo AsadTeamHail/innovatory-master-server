@@ -9,7 +9,7 @@ const { Users, ShopUsers } = require('../../models');
 const name = (x, otp, sub) => {
   const client = Sib.ApiClient.instance;
   const apiKey = client.authentications['api-key'];
-  apiKey.apiKey = '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';
+  apiKey.apiKey = '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';
   const transEmailApi = new Sib.TransactionalEmailsApi();
   const sender = { email:'syedabdullahteamhail@gmail.com',name:'Syed Abdullah'};
   const recievers = [ { email:x, }, ];
